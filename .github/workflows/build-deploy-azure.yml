@@ -41,6 +41,8 @@ jobs:
         run: |
           if [ -d "dist" ]; then
             echo "Directory dist exists."
+            echo "Working directory is $PWD"
+            ls -l dist
           else
             echo "Error: Directory dist does not exists."
             exit 1
