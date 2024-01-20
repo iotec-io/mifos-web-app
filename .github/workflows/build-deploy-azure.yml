@@ -57,6 +57,8 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           skip_app_build: true # Set this to true if you do not want to build the app before deploying.
-          app_location: "dist" # App source code path
+          app_location: "dist"
+          api_location: ''
+          output_location: ''
 
 
