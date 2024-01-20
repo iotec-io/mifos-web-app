@@ -42,7 +42,7 @@ jobs:
           if [ -d "dist" ]; then
             echo "Directory dist exists."
             echo "Working directory is $PWD"
-            ls -l dist
+            ls -l dist/web-app
           else
             echo "Error: Directory dist does not exists."
             exit 1
@@ -57,8 +57,8 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           skip_app_build: true # Set this to true if you do not want to build the app before deploying.
-          app_location: "dist"
+          app_location: "dist/web-app"
           api_location: ''
-          output_location: 'web-app'
+          output_location: ''
 
 
