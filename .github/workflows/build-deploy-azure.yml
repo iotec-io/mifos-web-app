@@ -35,7 +35,7 @@ jobs:
         run : npx tslint src/**/*.ts
 
       - name: Run build
-        run : npm run build:prod
+        run : npm run build:azure
 
       - name: check if dist folder exists
         run: |
